@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle {
     private String make;
 
     private String model;
@@ -13,9 +13,8 @@ public class Vehicle {
     }
 
     //Vehicle in motion
-    public void getMotion(){
-        System.out.println("The vehicle is moving. ");
-    }
+    public abstract void getMotion();
+
 
 
 }
@@ -31,7 +30,6 @@ class Car extends Vehicle{
 
     //Car is driving
 
-    @Override
     public void getMotion() {
         System.out.println("The car is driving on the road. ");
     }
@@ -48,7 +46,6 @@ class Bike extends Vehicle{
         this.numberOfWheels = numberOfWheels;
     }
 
-    @Override
     public void getMotion() {
         System.out.println("The bike is driving on the road. ");
     }
