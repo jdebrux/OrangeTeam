@@ -1,4 +1,4 @@
-package AnimalKingdom;
+package Animals.src.AnimalKingdom;
 
 public class Cat extends Animal {
     @Override

@@ -1,4 +1,4 @@
-package AnimalKingdom;
+package Animals.src.AnimalKingdom;
 
 public abstract class Animal {
     private String name;
