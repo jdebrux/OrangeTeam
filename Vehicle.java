@@ -54,24 +54,20 @@ class Bike extends Vehicle{
     }
 
 
+    public static void main(String[] args) {
 
+        Bike bike1 = new Bike("Harley Davidson", "Loud", "Motorbike", 2);
+        Bike bike2 = new Bike("Trek", "Mountain", "Bicycle", 2);
+        Car car1 = new Car("BMW", "320d", "Saloon", 5);
+        Car car2 = new Car("Mercerdes", "A-class", "Hatchback", 3);
 
-
-}
-
-
-public static void main(String[] args) {
-    
-    Bike bike1 = new Bike("Harley Davidson", "Loud", "Motorbike", 2);
-    Bike bike2 = new Bike("Trek", "Mountain", "Bicycle", 2);
-    Car car1 = new Bike("BMW", "320d", "Saloon", 5);
-    Car car2 = new Bike("Mercerdes", "A-class", "Hatchback", 3);
-
-    Vehicle[] vehicles = {bike1, bike2, car1, car2};
-    for (Vehicle v : vehicles) {
-        v.getMotion();
-    };
-
+        Vehicle[] vehicles = {bike1, bike2, car1, car2};
+        for (Vehicle v : vehicles) {
+            v.getMotion();
+        }
+        ;
+    }
 
 }
+
 
