@@ -36,9 +36,6 @@ class Car extends Vehicle{
         System.out.println("The car is driving on the road. ");
     }
 
-
-
-
 }
 
 
@@ -51,8 +48,6 @@ class Bike extends Vehicle{
         this.numberOfWheels = numberOfWheels;
     }
 
-    //Car is driving
-
     @Override
     public void getMotion() {
         System.out.println("The bike is driving on the road. ");
@@ -64,4 +59,19 @@ class Bike extends Vehicle{
 
 }
 
+
+public static void main(String[] args) {
+    
+    Bike bike1 = new Bike("Harley Davidson", "Loud", "Motorbike", 2);
+    Bike bike2 = new Bike("Trek", "Mountain", "Bicycle", 2);
+    Car car1 = new Bike("BMW", "320d", "Saloon", 5);
+    Car car2 = new Bike("Mercerdes", "A-class", "Hatchback", 3);
+
+    Vehicle[] vehicles = {bike1, bike2, car1, car2};
+    for (Vehicle v : vehicles) {
+        v.getMotion();
+    };
+
+
+}
 
